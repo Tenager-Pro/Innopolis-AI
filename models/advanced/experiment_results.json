@@ -1,0 +1,202 @@
+{
+  "best_model": "LightGBM",
+  "best_auc": 0.9989035087719299,
+  "comparison_table": {
+    "Model": {
+      "3": "LightGBM",
+      "1": "Gradient Boosting",
+      "0": "Random Forest",
+      "2": "XGBoost",
+      "4": "SVM"
+    },
+    "CV_AUC_Mean": {
+      "3": 0.9766365043325651,
+      "1": 0.9694837177427071,
+      "0": 0.9722013236501541,
+      "2": 0.9698028868978785,
+      "4": 0.9604531189643974
+    },
+    "Test_AUC": {
+      "3": 0.9989035087719299,
+      "1": 0.9987629329734593,
+      "0": 0.9983355825461089,
+      "2": 0.9961538461538462,
+      "4": 0.9873875393612236
+    },
+    "Test_Accuracy": {
+      "3": 0.9937833037300178,
+      "1": 0.9902309058614565,
+      "0": 0.9831261101243339,
+      "2": 0.9857904085257548,
+      "4": 0.9724689165186501
+    },
+    "Avg_Precision": {
+      "3": 0.9961632606437354,
+      "1": 0.9920212973013097,
+      "0": 0.9923046657774988,
+      "2": 0.9852933475192392,
+      "4": 0.9583812646869885
+    },
+    "Best_Params": {
+      "3": "{'subsample': 0.9, 'num_leaves': 31, 'n_estimators': 200, 'max_depth': 7, 'learning_rate': 0.1}...",
+      "1": "{'subsample': 0.9, 'n_estimators': 200, 'max_depth': 5, 'learning_rate': 0.15}...",
+      "0": "{'n_estimators': 200, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 'sqrt', 'max_de...",
+      "2": "{'subsample': 0.8, 'n_estimators': 200, 'max_depth': 5, 'learning_rate': 0.15, 'colsample_bytree': 0...",
+      "4": "{'kernel': 'rbf', 'gamma': 'auto', 'C': 10}..."
+    }
+  },
+  "feature_importance": {
+    "Random Forest": {
+      "feature": {
+        "0": "Tenure",
+        "14": "AvgOrdersPerMonth",
+        "13": "CashbackAmount",
+        "15": "AvgCashbackPerOrder",
+        "2": "WarehouseToHome",
+        "7": "NumberOfAddress",
+        "12": "DaySinceLastOrder",
+        "8": "Complain",
+        "36": "SatisfactionComplainRatio",
+        "9": "OrderAmountHikeFromlastYear"
+      },
+      "importance": {
+        "0": 0.14530552308040387,
+        "14": 0.12118475701334835,
+        "13": 0.0667428412987154,
+        "15": 0.055092181797548545,
+        "2": 0.05505921478529082,
+        "7": 0.05405622040011868,
+        "12": 0.049187436085938466,
+        "8": 0.0481913954364099,
+        "36": 0.04647732251276968,
+        "9": 0.04288710494757712
+      },
+      "model": {
+        "0": "Random Forest",
+        "14": "Random Forest",
+        "13": "Random Forest",
+        "15": "Random Forest",
+        "2": "Random Forest",
+        "7": "Random Forest",
+        "12": "Random Forest",
+        "8": "Random Forest",
+        "36": "Random Forest",
+        "9": "Random Forest"
+      }
+    },
+    "Gradient Boosting": {
+      "feature": {
+        "0": "Tenure",
+        "7": "NumberOfAddress",
+        "8": "Complain",
+        "13": "CashbackAmount",
+        "12": "DaySinceLastOrder",
+        "2": "WarehouseToHome",
+        "36": "SatisfactionComplainRatio",
+        "14": "AvgOrdersPerMonth",
+        "15": "AvgCashbackPerOrder",
+        "9": "OrderAmountHikeFromlastYear"
+      },
+      "importance": {
+        "0": 0.2782920176199684,
+        "7": 0.07693011775753422,
+        "8": 0.07416629602442416,
+        "13": 0.06004972115582596,
+        "12": 0.05305667856637785,
+        "2": 0.05103930742111952,
+        "36": 0.04933691697299155,
+        "14": 0.04820753191864509,
+        "15": 0.04489098739793984,
+        "9": 0.031898272227199785
+      },
+      "model": {
+        "0": "Gradient Boosting",
+        "7": "Gradient Boosting",
+        "8": "Gradient Boosting",
+        "13": "Gradient Boosting",
+        "12": "Gradient Boosting",
+        "2": "Gradient Boosting",
+        "36": "Gradient Boosting",
+        "14": "Gradient Boosting",
+        "15": "Gradient Boosting",
+        "9": "Gradient Boosting"
+      }
+    },
+    "XGBoost": {
+      "feature": {
+        "0": "Tenure",
+        "8": "Complain",
+        "14": "AvgOrdersPerMonth",
+        "34": "MaritalStatus_Single",
+        "28": "PreferedOrderCat_Laptop & Accessory",
+        "26": "PreferedOrderCat_Fashion",
+        "7": "NumberOfAddress",
+        "36": "SatisfactionComplainRatio",
+        "6": "SatisfactionScore",
+        "12": "DaySinceLastOrder"
+      },
+      "importance": {
+        "0": 0.11150969564914703,
+        "8": 0.0618508942425251,
+        "14": 0.05190975219011307,
+        "34": 0.037603169679641724,
+        "28": 0.03660392016172409,
+        "26": 0.03568457439541817,
+        "7": 0.03399549052119255,
+        "36": 0.03187316283583641,
+        "6": 0.029523499310016632,
+        "12": 0.02889377437531948
+      },
+      "model": {
+        "0": "XGBoost",
+        "8": "XGBoost",
+        "14": "XGBoost",
+        "34": "XGBoost",
+        "28": "XGBoost",
+        "26": "XGBoost",
+        "7": "XGBoost",
+        "36": "XGBoost",
+        "6": "XGBoost",
+        "12": "XGBoost"
+      }
+    },
+    "LightGBM": {
+      "feature": {
+        "2": "WarehouseToHome",
+        "13": "CashbackAmount",
+        "15": "AvgCashbackPerOrder",
+        "9": "OrderAmountHikeFromlastYear",
+        "0": "Tenure",
+        "7": "NumberOfAddress",
+        "12": "DaySinceLastOrder",
+        "14": "AvgOrdersPerMonth",
+        "6": "SatisfactionScore",
+        "36": "SatisfactionComplainRatio"
+      },
+      "importance": {
+        "2": 677,
+        "13": 572,
+        "15": 510,
+        "9": 458,
+        "0": 397,
+        "7": 390,
+        "12": 354,
+        "14": 328,
+        "6": 242,
+        "36": 212
+      },
+      "model": {
+        "2": "LightGBM",
+        "13": "LightGBM",
+        "15": "LightGBM",
+        "9": "LightGBM",
+        "0": "LightGBM",
+        "7": "LightGBM",
+        "12": "LightGBM",
+        "14": "LightGBM",
+        "6": "LightGBM",
+        "36": "LightGBM"
+      }
+    }
+  }
+}

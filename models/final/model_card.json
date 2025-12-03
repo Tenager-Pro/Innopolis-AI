@@ -1,0 +1,21 @@
+{
+  "model_name": "Customer_Churn_Predictor",
+  "model_type": "LGBMClassifier",
+  "model_version": "1.0",
+  "training_date": "2025-12-03T18:34:57.853418",
+  "performance": {
+    "test_auc": 0.9989035087719299,
+    "test_accuracy": 0.9937833037300178,
+    "test_f1": 0.9814323607427056,
+    "auc_confidence_interval": [
+      0.9973482772319183,
+      0.999965867967942
+    ]
+  },
+  "statistical_tests": {
+    "mcnemar_pvalue": 0.0009765625,
+    "delong_pvalue": 1.0
+  },
+  "business_impact": {
+    "confusion_matrix": {
+      "TN": 
